@@ -7,8 +7,8 @@ Name:		draco
 Version:	1.5.6
 Release:	1
 License:	Apache-2.0
-URL:		https://google.github.io//%{name}
-Source0:	https://google.github.io//%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+URL:		https://github.com/google/%{name}
+Source0:	https://github.com/google/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 # Downstream-only patch that unconditionally links a system copy of gtest,
 # rather than expecting a git submodule as upstream prefers (and gtest upstream
 # would recommend).
@@ -77,7 +77,7 @@ rm -fr {javascript,maya,docs/assets}
 %build
 %cmake \
     -DDRACO_TESTS:BOOL=OFF \
-	-GNinja
+    -GNinja
 %ninja_build
 
 

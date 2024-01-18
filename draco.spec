@@ -4,7 +4,7 @@
 
 Summary:	Compress and decompres 3D geometric meshes and point clouds
 Name:		draco
-Version:	1.5.6
+Version:	1.5.7
 Release:	1
 License:	Apache-2.0
 URL:		https://github.com/google/%{name}
